@@ -1,0 +1,38 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="AspSampleProject.Site1" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head runat="server">
+    <title>Home Page</title>
+    <style type="text/css">
+        .style2
+        {
+            color: #993300;
+        }
+    </style>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+     <h1 class="style2"> <marquee width="100%" direction="right" BEHAVIOR="ALTERNATE">LAB MANAGEMENT</marquee></h1>   
+         <table width="100%">
+                <tr valign="top">
+                <td style="width:200px"> 
+                To do: Menu
+                    <asp:TreeView ID="TreeView1" runat="server" DataSourceID="SiteMapDataSource1" Width="182px">
+                    </asp:TreeView>
+                    <asp:SiteMapDataSource ID="SiteMapDataSource1" runat="server" />
+                </td>
+                <td>
+                <asp:ContentPlaceHolder ID="MainContent" runat="server">
+                </asp:ContentPlaceHolder>
+                </td>
+                </tr>
+        </table>
+    </div>
+    </form>
+</body>
+</html>
