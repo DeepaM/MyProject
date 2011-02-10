@@ -1,3 +1,9 @@
+<<<<<<< HEAD
 Sample change
 
 Sample change made by Vysakh
+=======
+Sample change 
+Sample Change Made by R3
+Git Example Ist Push from R3
+>>>>>>> e77e664613eee1909dedf3fb2ee408feef63551b
